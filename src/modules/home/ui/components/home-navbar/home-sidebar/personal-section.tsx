@@ -9,6 +9,7 @@ import {
   SidebarGroupLabel
 } from "@/components/ui/sidebar";
 import Link from "next/link";
+import {useAuth, useClerk} from '@clerk/nextjs'
 
 
 
@@ -29,6 +30,7 @@ const items = [
     title: "All Playlists",
     url: "/playlists",
     icon: ListVideoIcon,
+    auth: true,
   },
   {
     title: "Your Videos",
@@ -44,6 +46,9 @@ const items = [
   },
 ];
 export const PersonalSection = () => {
+  const { isSignedIn } = useAuth()
+  const clerk = useClerk()
+
   return (
     <SidebarGroup>
       <SidebarGroupLabel className="flex items-center gap-1">
@@ -58,7 +63,12 @@ export const PersonalSection = () => {
                 asChild
                 tooltip={item.title}
                 isActive={false} // todo: change to look at current pathname
-                onClick={() => {}} // todo: do something on click
+                onClick={(e) => {
+                  if(!isSignedIn && item.auth){
+                    e.preventDefault()
+                    return clerk.openSignIn()
+                  }
+                }} 
               >
                 <Link className="flex items-center gap-4" href={item.url}>
                   <item.icon />
