@@ -6,6 +6,7 @@
   "typescript.preferences.importModuleSpecifier": "shortest",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "cSpell.words": [
+    "OPENROUTER",
     "previewl",
     "sonner",
     "svix"
