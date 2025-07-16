@@ -6,8 +6,49 @@ import { createTRPCRouter, protectedProcedure } from "@/trpc/init";
 import { TRPCError } from "@trpc/server";
 import { and, eq } from "drizzle-orm";
 import { z } from "zod";
+import { workflow } from "@/lib/workflow";
 
 export const videosRouter = createTRPCRouter({
+
+
+  generateDescription: protectedProcedure 
+     .input(z.object({ id: z.string().uuid() }))
+     .mutation(async({ctx, input}) => {
+      const {id: userId} = ctx.user;
+
+      const { workflowRunId } = await workflow.trigger({
+        url: `${process.env.UPSTASH_WORKFLOW_URL}/api/videos/workflows/description`,
+        body: {userId, videoId: input.id},
+      })
+      return workflowRunId;
+     }),
+
+
+  generateTitle: protectedProcedure 
+     .input(z.object({ id: z.string().uuid() }))
+     .mutation(async({ctx, input}) => {
+      const {id: userId} = ctx.user;
+
+      const { workflowRunId } = await workflow.trigger({
+        url: `${process.env.UPSTASH_WORKFLOW_URL}/api/videos/workflows/title`,
+        body: {userId, videoId: input.id},
+      })
+      return workflowRunId;
+     }),
+
+
+  generateThumbnail: protectedProcedure 
+     .input(z.object({ id: z.string().uuid() }))
+     .mutation(async({ctx, input}) => {
+      const {id: userId} = ctx.user;
+
+      const { workflowRunId } = await workflow.trigger({
+        url: `${process.env.UPSTASH_WORKFLOW_URL}/api/videos/workflows/title`,
+        body: {userId, videoId: input.id},
+      })
+      return workflowRunId;
+     }),
+
   restoreThumbnail: protectedProcedure
     .input(z.object({ id: z.string().uuid() }))
     .mutation(async ({ ctx, input }) => {
@@ -21,6 +62,8 @@ export const videosRouter = createTRPCRouter({
       if (existingVideo.thumbnailKey) {
         const utapi = new UTApi();
 
+        
+
         await utapi.deleteFiles(existingVideo.thumbnailKey);
         await db
           .update(videos)
@@ -30,12 +73,22 @@ export const videosRouter = createTRPCRouter({
 
       if (!existingVideo.muxPlaybackId)
         throw new TRPCError({ code: "BAD_REQUEST" });
+      
+      const utapi = new UTApi()
 
-      const thumbnailUrl = `https://image.mux.com/${existingVideo.muxPlaybackId}/thumbnail.jpg`;
+      const tempThumbnailUrl = `https://image.mux.com/${existingVideo.muxPlaybackId}/thumbnail.jpg`;
+
+      const uploadedThumbnail = await utapi.uploadFilesFromUrl(tempThumbnailUrl)
+
+      if(!uploadedThumbnail.data){
+        return new TRPCError({code: 'INTERNAL_SERVER_ERROR'})
+      }
+
+      const {key: thumbnailKey, url: thumbnailUrl} = uploadedThumbnail.data; 
 
       const [updatedVideo] = await db
         .update(videos)
-        .set({ thumbnailUrl })
+        .set({ thumbnailUrl, thumbnailKey })
         .where(and(eq(videos.id, input.id), eq(videos.userId, userId)))
         .returning();
 
