@@ -9,7 +9,6 @@ import { VideoBanner } from "../../components/video-banner";
 import { VideoTopRow } from "../../components/video-top-row";
 import { useAuth } from '@clerk/nextjs'
 
-
 interface VideoSectionProps {
   videoId: string;
 }
