@@ -11,6 +11,8 @@ interface PageProps {
 const Page = async({params}:PageProps) => {
   const {videoId} = await params;
   void trpc.videos.getOne.prefetch({id: videoId})
+  // todo: don't forget to change to prefetch infinite
+  void trpc.comments.getMany.prefetch({videoId : videoId})
 
 
   return (
