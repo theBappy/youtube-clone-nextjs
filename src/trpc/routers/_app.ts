@@ -6,6 +6,7 @@ import { videoViewsRouter } from "@/modules/video-views/server/procedures";
 import { videoReactionsRouter } from "@/modules/video-reactions/server/procedures";
 import { subscriptionsRouter } from "@/modules/subscriptions/server/procedures";
 import { commentsRouter } from "@/modules/comments/server/procedures";
+import { commentReactionsRouter } from "@/modules/comment-reactions/procedures";
 
 export const appRouter = createTRPCRouter({
   studio: StudioRouter,
@@ -15,6 +16,7 @@ export const appRouter = createTRPCRouter({
   videoReactions: videoReactionsRouter,
   subscriptions: subscriptionsRouter,
   comments: commentsRouter,
+  commentReactions: commentReactionsRouter,
 });
 
 export type AppRouter = typeof appRouter;
