@@ -167,6 +167,17 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
     },
   });
 
+  const revalidate = trpc.videos.revalidate.useMutation({
+    onSuccess: () => {
+      utils.studio.getMany.invalidate();
+      utils.studio.getOne.invalidate({ id: videoId });
+      toast.success("Video revalidated");
+    },
+    onError: (error) => {
+      toast.error(error.message || "Failed to revalidate video");
+    },
+  });
+
   const generateTitle = trpc.videos.generateTitle.useMutation({
     onSuccess: () => {
       toast.success("Background job started", {
@@ -253,6 +264,10 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
                   <DropdownMenuItem onClick={() => setShowDeleteConfirm(true)}>
                     <TrashIcon className="size-4 mr-2" />
                     Delete
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => revalidate.mutate({ id: videoId })}>
+                    <RotateCcwIcon className="size-4 mr-2" />
+                    Revalidate
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
