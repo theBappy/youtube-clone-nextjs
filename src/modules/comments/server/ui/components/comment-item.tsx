@@ -85,7 +85,7 @@ export const CommentItem = ({ comment,variant = 'comment' }: CommentItemProps) =
               </span>
               <span className="text-xs text-muted-foreground">
                 {formatDistanceToNow(comment.createdAt, {
-                  suffix: true,
+                  addSuffix: true,
                 })}
               </span>
             </div>
