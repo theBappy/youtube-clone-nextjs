@@ -11,8 +11,12 @@ import {
 import { UserInfo } from "@/modules/users/user-info";
 import { UserAvatar } from "@/components/user-avatar";
 import VideoMenu from "../components/video-menu";
-import { VideoThumbnail } from "@/modules/ui/components/video-thumbnail";
+import {
+  VideoThumbnail,
+  VideoThumbnailSkeleton,
+} from "@/modules/ui/components/video-thumbnail";
 import { VideoGetManyOutput } from "@/modules/types";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const VideoRowCardVariants = cva("group flex min-w-0", {
   variants: {
@@ -42,25 +46,49 @@ interface VideoRowCardProps extends VariantProps<typeof VideoRowCardVariants> {
   onRemove?: () => void;
 }
 
-export const VideoRowCardSkeleton = () => {
-  return <div>Skeleton</div>;
+export const VideoRowCardSkeleton = ({ size }:  VariantProps<typeof VideoRowCardVariants>) => {
+  return (
+    <div className={VideoRowCardVariants({ size })}>
+      {/* thumbnail skeleton */}
+      <div className={ThumbnailVariants({ size })}>
+        <VideoThumbnailSkeleton />
+      </div>
+      {/* info skeleton */}
+      <div className="flex-1 min-w-0">
+        <div className="flex justify-between gap-x-2">
+          <div className="flex-1 min-w-0">
+            <Skeleton
+              className={cn("h-5 w-[40%]", size === "compact" && "h-4 w-[40%]")}
+            />
+            {size === "default" && (
+              <>
+                <Skeleton className="size-4 mt-1 w-[20%]" />
+                <div className="flex items-center gap-2 my-3">
+                  <Skeleton className="size-8 rounded-full" />
+                  <Skeleton className="w-24 h-4" />
+                </div>
+              </>
+            )}
+            {size === "compact" && <Skeleton className="h-4 w-[50%] mt-1" />}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export const VideoRowCard = ({ data, size, onRemove }: VideoRowCardProps) => {
-
   const compactViews = useMemo(() => {
-    return Intl.NumberFormat('en', {
-        notation: 'compact'
-    }).format(data.viewCount)
-  }, [data.viewCount])
+    return Intl.NumberFormat("en", {
+      notation: "compact",
+    }).format(data.viewCount);
+  }, [data.viewCount]);
 
   const compactLikes = useMemo(() => {
-    return Intl.NumberFormat('en', {
-        notation: 'compact'
-    }).format(data.likeCount)
-  }, [data.likeCount])
-
-
+    return Intl.NumberFormat("en", {
+      notation: "compact",
+    }).format(data.likeCount);
+  }, [data.likeCount]);
 
   return (
     <div className={VideoRowCardVariants({ size })}>
@@ -106,23 +134,20 @@ export const VideoRowCard = ({ data, size, onRemove }: VideoRowCardProps) => {
                     </p>
                   </TooltipTrigger>
                   <TooltipContent
-                  size="bottom"
-                  align='center'
-                  className="bg-black/70"
+                    size="bottom"
+                    align="center"
+                    className="bg-black/70"
                   >
                     <p className="">From the video description</p>
                   </TooltipContent>
-
                 </Tooltip>
               </>
             )}
-            {size === 'compact' && (
-                <UserInfo size="sm" name={data.user.name} />
-            )}
-            {size === 'compact' && (
-                <p className="text-xs text-muted-foreground mt-1">
-                    {compactViews} views • {compactLikes} likes
-                </p>
+            {size === "compact" && <UserInfo size="sm" name={data.user.name} />}
+            {size === "compact" && (
+              <p className="text-xs text-muted-foreground mt-1">
+                {compactViews} views • {compactLikes} likes
+              </p>
             )}
           </Link>
           <div className="flex-none">

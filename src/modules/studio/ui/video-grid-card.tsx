@@ -1,9 +1,9 @@
 
 import Link from "next/link";
-import { useMemo } from "react";
-import { VideoThumbnail } from "@/modules/ui/components/video-thumbnail";
+import { VideoThumbnail, VideoThumbnailSkeleton } from "@/modules/ui/components/video-thumbnail";
 import { VideoGetManyOutput } from "@/modules/types";
-import { VideoInfo } from "./video-info";
+import { VideoInfo, VideoInfoSkeleton } from "./video-info";
+
 
 
 interface VideoGridCardProps {
@@ -12,7 +12,10 @@ interface VideoGridCardProps {
 }
 
 export const VideoGridCardSkeleton = () => {
-  return <div>Skeleton</div>;
+  return <div className="flex flex-col gap-2 w-full">
+    <VideoThumbnailSkeleton />
+    <VideoInfoSkeleton />
+  </div>;
 };
 
 export const VideoGridCard = ({ data, onRemove }: VideoGridCardProps) => {
