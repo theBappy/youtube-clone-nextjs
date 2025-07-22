@@ -5,6 +5,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { APP_URL } from "@/constants";
 import {
   FlagIcon,
   ListPlusIcon,
@@ -25,7 +26,7 @@ const VideoMenu = ({ videoId, variant = 'ghost', onRemove }: VideoMenuProps) => 
   const onShare = () => {
     // todo: change if deploying outside vercel
     const fullUrl = `${
-      process.env.VERCEL_URL || "http://localhost:3000"
+      APP_URL || "http://localhost:3000"
     }/videos/${videoId}`;
     navigator.clipboard.writeText(fullUrl)
     toast.success('Link copied to the clipboard')
