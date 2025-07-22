@@ -63,6 +63,7 @@ import Image from "next/image";
 import { ThumbnailUploadModal } from "@/modules/studio/components/thumbnail-upload-modal";
 import { ThumbnailGenerateModal } from "@/modules/studio/components/thumbnail-generate-modal";
 import { Skeleton } from "@/components/ui/skeleton";
+import { APP_URL } from "@/constants";
 
 interface FormSectionProps {
   videoId: string;
@@ -220,7 +221,7 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
   };
 
   const fullUrl = `${
-    process.env.VERCEL_URL || "http://localhost:3000"
+    APP_URL || "http://localhost:3000"
   }/videos/${videoId}`;
 
   const onCopy = async () => {
