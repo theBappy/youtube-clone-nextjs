@@ -23,7 +23,7 @@ const VideoReactions = ({videoId, likes, dislikes, viewerReaction}:VideoReaction
   const like = trpc.videoReactions.like.useMutation({
     onSuccess: () =>{
       utils.videos.getOne.invalidate({id: videoId})
-      // todo: invalidate 'liked' playlist
+      utils.playlists.getLiked.invalidate()
     },
     onError: (error) => {
       toast.error('Something went wrong')
@@ -35,7 +35,7 @@ const VideoReactions = ({videoId, likes, dislikes, viewerReaction}:VideoReaction
   const dislike = trpc.videoReactions.dislike.useMutation({
     onSuccess: () =>{
       utils.videos.getOne.invalidate({id: videoId})
-      // todo: invalidate 'liked' playlist
+      utils.playlists.getLiked.invalidate()
     },
     onError: (error) => {
       toast.error('Something went wrong')
@@ -45,7 +45,6 @@ const VideoReactions = ({videoId, likes, dislikes, viewerReaction}:VideoReaction
     }
   })
 
-  
   return (
     <div className="flex items-center flex-none">
       <Button
