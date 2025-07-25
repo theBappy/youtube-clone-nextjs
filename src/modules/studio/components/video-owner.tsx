@@ -22,13 +22,12 @@ export const VideoOwner = ({ user, videoId }: VideoOwnerProps) => {
 
   return (
     <div className="flex items-center sm:items-start justify-between sm:justify-start gap-3">
-      <Link href={`/users/${user.id}`}>
+      <Link prefetch   href={`/users/${user.id}`}>
         <div className="flex items-center gap-3 min-w-0">
           <UserAvatar size="lg" imageUrl={user.imageUrl} name={user.name} />
           <div className="flex flex-col gap-1 min-w-0">
           <UserInfo size='lg' name={user.name} />
           <span className="text-sm text-muted-foreground line-clamp-1">
-            {/* todo: properly fill subscriber counts */}
             {user.subscriberCount} subscribers
           </span>
           </div>
@@ -36,7 +35,7 @@ export const VideoOwner = ({ user, videoId }: VideoOwnerProps) => {
       </Link>
       {clerkUserId === user.clerkId ? (
         <Button className="rounded-full" asChild variant="secondary">
-          <Link href={`/studio/videos/${videoId}`}>Edit Video</Link>
+          <Link prefetch   href={`/studio/videos/${videoId}`}>Edit Video</Link>
         </Button>
       ) : (
         <SubscriptionButton

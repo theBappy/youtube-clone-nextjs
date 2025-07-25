@@ -1,5 +1,4 @@
 
-// todo: create a script to seed category
 import { db } from "@/db"
 import { categories } from "@/db/schema"
 const categoryNames = [

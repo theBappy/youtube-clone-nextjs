@@ -331,11 +331,6 @@ export const videosRouter = createTRPCRouter({
           eq(viewerSubscriptions.creatorId, users.id)
         )
         .where(eq(videos.id, input.id));
-      // .groupBy(
-      //   videos.id,
-      //   users.id,
-      //   viewerReactions.type,
-      // )
 
       if (!existingVideo) throw new TRPCError({ code: "NOT_FOUND" });
 
@@ -430,7 +425,6 @@ export const videosRouter = createTRPCRouter({
       const playbackId = asset.playback_ids[0].id;
       const duration = asset.duration ? Math.round(asset.duration * 1000) : 0;
 
-      // TODO: find a way to revalidate track status
 
       const [updatedVideo] = await db
         .update(videos)
