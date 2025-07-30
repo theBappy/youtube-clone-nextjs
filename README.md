@@ -1,6 +1,6 @@
 # 🎥 uTube - Fullstack Video Sharing Platform
 
-uTube is a full-featured, you can say a youtube clone exactly like youtube, YouTube-like video platform built with bleeding-edge technologies. It offers everything from high-performance video playback and real-time processing to intelligent content management, powered by AI and a modular design.
+uTube is a full-featured, you can say a youtube clone exactly like youtube, YouTube-like video platform built with bleeding-edge technologies. It offers everything from high-performance video playback and real-time processing to intelligent content management, powered by AI and a modular design. Honestly speaking, put less effort in UI than functionlity and logic.
 
 ---
 
