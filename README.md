@@ -4,24 +4,24 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
 
 
 ## 🚀 Features
-🎥 Advanced video player with quality controls
-🎬 Real-time video processing with Mux
-📝 Automatic video transcription
-🖼️ Smart thumbnail generation
-🤖 AI-powered title and description generation
-📊 Creator Studio with metrics
-🗂️ Custom playlist management
-📱 Responsive design across devices
-🔄 Multiple content feeds
-💬 Interactive comment system
-👍 Like and subscription system
-🎯 Watch history tracking
-🔐 Authentication system
-📦 Module-based architecture
-🗄️ PostgreSQL with DrizzleORM
-🚀 Next.js 15 & React 19
-🔄 tRPC for type-safe APIs
-💅 TailwindCSS & ShadcnUI styling
+🎥 Advanced video player with quality controls<br />
+🎬 Real-time video processing with Mux<br />
+📝 Automatic video transcription<br />
+🖼️ Smart thumbnail generation<br />
+🤖 AI-powered title and description generation<br />
+📊 Creator Studio with metrics<br />
+🗂️ Custom playlist management<br />
+📱 Responsive design across devices<br />
+🔄 Multiple content feeds<br />
+💬 Interactive comment system<br />
+👍 Like and subscription system<br />
+🎯 Watch history tracking<br />
+🔐 Authentication system<br />
+📦 Module-based architecture<br />
+🗄️ PostgreSQL with DrizzleORM<br />
+🚀 Next.js 15 & React 19<br />
+🔄 tRPC for type-safe APIs<br />
+💅 TailwindCSS & ShadcnUI styling<br />
 
 
 
