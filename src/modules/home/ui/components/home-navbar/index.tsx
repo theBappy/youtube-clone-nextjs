@@ -3,11 +3,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { SearchInput } from './search-input';
 import { AuthButton } from '../../auth/ui/components/auth-button';
+import { ModeToggle } from "../../views/theme-toggler";
+
 
 
 export const HomeNavbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 h-16 bg-white flex items-center px-2 pr-5 z-50">
+    <div className="fixed top-0 left-0 right-0 h-16 bg-white dark:bg-zinc-900 text-black dark:text-white flex items-center px-2 pr-5 z-50 shadow">
       <div className="flex items-center gap-4 w-full">
         {/* menu and logo */}
         <div className="flex items-center flex-shrink-0">
@@ -24,9 +26,10 @@ export const HomeNavbar = () => {
         <SearchInput />
         </div>
         <div className="flex-shrink-0 flex items-center gap-4">
+          <ModeToggle />
           <AuthButton />
         </div>
       </div>
-    </nav>
+    </div>
   );
 };

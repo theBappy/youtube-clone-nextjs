@@ -2,6 +2,7 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { HomeNavbar } from "../components/home-navbar/index";
 import { HomeSidebar } from '../components/home-navbar/home-sidebar/home-sidebar';
 
+
 interface HomeLayoutProps {
   children: React.ReactNode;
 }

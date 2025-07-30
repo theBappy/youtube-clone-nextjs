@@ -4,6 +4,7 @@ import "./globals.css";
 import {ClerkProvider} from '@clerk/nextjs'
 import { TRPCProvider } from "@/trpc/client";
 import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "../components/theme-provider";
 
 const inter = Inter({
   subsets: ['latin']
@@ -21,13 +22,20 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider afterSignOutUrl="/">
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.className} antialiased`}
       >
         <TRPCProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
           <Toaster />
           {children}
+          </ThemeProvider>
         </TRPCProvider>
       </body>
     </html>

@@ -40,7 +40,7 @@ export const SubscriptionItem = ({
       <div className="flex-1">
         <div className="flex items-center justify-between">
           <div className="">
-            <h3 className="text-sm">{name}</h3>
+            <h3 className="text-sm dark:text-white">{name}</h3>
             <p className="text-xs text-muted-foreground">
               {subscriberCount.toLocaleString()} subscribers
             </p>

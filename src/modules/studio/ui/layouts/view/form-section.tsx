@@ -82,7 +82,7 @@ export const FormSection = ({ videoId }: FormSectionProps) => {
 const FormSectionSkeleton = () => {
   return (
     <div>
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center dark:bg-black justify-between mb-6">
         <div className="space-y-2">
           <Skeleton className="h-7 w-32" />
           <Skeleton className="h-4 w-40" />
@@ -108,8 +108,8 @@ const FormSectionSkeleton = () => {
             <Skeleton className="h-10 w-full" />
           </div>
         </div>
-        <div className="flex flex-col gap-y-8 lg:col-span-2">
-          <div className="flex flex-col gap-4 bg-[#f9f9f9] rounded-xl overflow-hidden">
+        <div className="flex flex-col  gap-y-8 lg:col-span-2">
+          <div className="flex flex-col gap-4 bg-[#f9f9f9] dark:bg-black rounded-xl overflow-hidden">
             <Skeleton className="aspect-video" />
             <div className="space-y-2">
               <Skeleton className="h-4 w-20" />
@@ -242,7 +242,7 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
       />
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center justify-between mb-6 dark:text-white dark:bg-black">
             <div>
               <h1 className="text-2xl font-bold">Video Details</h1>
               <p className="text-xs text-muted-foreground">
@@ -361,7 +361,7 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
                   <FormItem>
                     <FormLabel>Thumbnail</FormLabel>
                     <FormControl>
-                      <div className="p-0.5 border border-dashed border-neutral-400 relative h-[84px] w-[153px] group relative">
+                      <div className="p-0.5 border border-dashed border-neutral-400  h-[84px] w-[153px] group relative">
                         <Image
                           fill
                           alt="thumbnail"
@@ -439,14 +439,14 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
             </div>
 
             <div className="flex flex-col gap-y-8 lg:col-span-2">
-              <div className="flex flex-col gap-4 bg-[#f9f9f9] rounded-xl overflow-hidden h-fit">
+              <div className="flex flex-col gap-4 bg-[#f9f9f9] dark:bg-black rounded-xl overflow-hidden h-fit">
                 <div className="aspect-video overflow-hidden relative">
                   <VideoPlayer
                     playbackId={video.muxPlaybackId}
                     thumbnailUrl={video.thumbnailUrl}
                   />
                 </div>
-                <div className="p-4 flex flex-col gap-y-6">
+                <div className="p-4 flex flex-col dark:text-white dark:bg-black gap-y-6">
                   <div className="flex justify-between items-center gap-x-2">
                     <div className="flex flex-col gap-y-1">
                       <p className="text-muted-foreground text-xs">
