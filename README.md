@@ -94,13 +94,13 @@ Add up to 4–5 screenshots here of your app’s main features, such as:
 
 ```bash
 # Install dependencies
-pnpm install
+bun install
 
 # Setup environment
 cp .env.example .env
 
 # Run dev server
-pnpm dev
+bun run dev:all
 ```
 
 ---
