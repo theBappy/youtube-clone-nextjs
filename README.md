@@ -8,11 +8,12 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
 
 Add up to 4–5 screenshots here of your app’s main features, such as:
 
-* Home feed with thumbnails
-* Video player in action
-* Creator studio dashboard
-* Playlist management
-* Dark/light mode toggle
+<img width="1280" height="1072" alt="yt1" src="https://github.com/user-attachments/assets/23783120-cc2a-47ba-8ff4-b64148447fd6" />
+<img width="1280" height="672" alt="yt8" src="https://github.com/user-attachments/assets/c170aa7f-71f0-48b1-a951-1273828850d6" />
+<img width="1280" height="680" alt="yt3" src="https://github.com/user-attachments/assets/7abcc6e0-05cd-409c-b253-cb548aa840ea" />
+<img width="1280" height="1153" alt="yt11" src="https://github.com/user-attachments/assets/0391d808-27e5-4b77-adf7-e3d4ce294510" />
+<img width="1280" height="686" alt="yt7" src="https://github.com/user-attachments/assets/36bd0473-0c3f-4ac6-9e72-5ad57b2b3d64" />
+<img width="1280" height="672" alt="yt10" src="https://github.com/user-attachments/assets/4437c613-7bc5-4c68-ab55-b73613df713a" />
 
 ---
 
