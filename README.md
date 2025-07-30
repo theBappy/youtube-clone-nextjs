@@ -44,6 +44,26 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
 
 ---
 
+
+## 🧱 Tech Stack
+
+| Tech                                                                                                                | Description                  |
+| ------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge\&logo=nextdotjs)                         | App framework (v15)          |
+| ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)               | Frontend UI (v19)            |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript)                  | Type-safe code               |
+| ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge\&logo=tailwind-css)              | Utility-first CSS            |
+| ![tRPC](https://img.shields.io/badge/tRPC-2596be?style=for-the-badge\&logo=trpc)                                    | End-to-end type-safe APIs    |
+| ![Clerk](https://img.shields.io/badge/Clerk-F5F5F5?style=for-the-badge\&logo=clerk)                                 | Authentication provider      |
+| ![Mux](https://img.shields.io/badge/Mux-000000?style=for-the-badge\&logo=mux)                                       | Video streaming & processing |
+| ![UploadThing](https://img.shields.io/badge/UploadThing-000000?style=for-the-badge\&logo=uploadthing)               | File upload handler          |
+| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge\&logo=postgresql\&logoColor=white) | Relational database          |
+| ![Drizzle ORM](https://img.shields.io/badge/Drizzle%20ORM-FF6B81?style=for-the-badge\&logo=drizzle)                 | Type-safe DB ORM             |
+| ![Upstash](https://img.shields.io/badge/Upstash-1A202C?style=for-the-badge\&logo=upstash)                           | Edge cache & rate-limiting   |
+| ![QStash](https://img.shields.io/badge/QStash-000000?style=for-the-badge\&logo=vercel)                              | Background task queue        |
+
+---
+
 ### 🎬 Video Management
 
 * Advanced video player with quality/resolution controls
@@ -83,24 +103,6 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
 
 ---
 
-## 🧱 Tech Stack
-
-| Tech                                                                                                                | Description                  |
-| ------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge\&logo=nextdotjs)                         | App framework (v15)          |
-| ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)               | Frontend UI (v19)            |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript)                  | Type-safe code               |
-| ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge\&logo=tailwind-css)              | Utility-first CSS            |
-| ![tRPC](https://img.shields.io/badge/tRPC-2596be?style=for-the-badge\&logo=trpc)                                    | End-to-end type-safe APIs    |
-| ![Clerk](https://img.shields.io/badge/Clerk-F5F5F5?style=for-the-badge\&logo=clerk)                                 | Authentication provider      |
-| ![Mux](https://img.shields.io/badge/Mux-000000?style=for-the-badge\&logo=mux)                                       | Video streaming & processing |
-| ![UploadThing](https://img.shields.io/badge/UploadThing-000000?style=for-the-badge\&logo=uploadthing)               | File upload handler          |
-| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge\&logo=postgresql\&logoColor=white) | Relational database          |
-| ![Drizzle ORM](https://img.shields.io/badge/Drizzle%20ORM-FF6B81?style=for-the-badge\&logo=drizzle)                 | Type-safe DB ORM             |
-| ![Upstash](https://img.shields.io/badge/Upstash-1A202C?style=for-the-badge\&logo=upstash)                           | Edge cache & rate-limiting   |
-| ![QStash](https://img.shields.io/badge/QStash-000000?style=for-the-badge\&logo=vercel)                              | Background task queue        |
-
----
 
 ## 📂 Project Structure
 
