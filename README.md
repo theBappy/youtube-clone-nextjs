@@ -13,9 +13,9 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
   <img src="https://github.com/user-attachments/assets/22ffd802-e430-4fb7-91dd-f8b1d2297a7d" alt="yt6" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
   <img src="https://github.com/user-attachments/assets/0391d808-27e5-4b77-adf7-e3d4ce294510" alt="yt11" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
 
-  <img src="https://github.com/user-attachments/assets/d3e6be13-bd8d-4cb8-a9c2-c913df00ee86" alt="mobile1" style="width: 60px; height: 120px; object-fit: cover; border-radius: 6px;" />
-  <img src="https://github.com/user-attachments/assets/bf030cd8-0fad-4734-8f2d-e83134e5495c" alt="mobile2" style="width: 60px; height: 120px; object-fit: cover; border-radius: 6px;" />
-  <img src="https://github.com/user-attachments/assets/735b3c92-46f7-4f2d-b62a-bd521d304bb4" alt="mobile3" style="width: 60px; height: 120px; object-fit: cover; border-radius: 6px;" />
+  <img src="https://github.com/user-attachments/assets/d3e6be13-bd8d-4cb8-a9c2-c913df00ee86" alt="mobile1" style="width: 100px; height: 200px; object-fit: cover; border-radius: 6px;" />
+  <img src="https://github.com/user-attachments/assets/bf030cd8-0fad-4734-8f2d-e83134e5495c" alt="mobile2" style="width: 100px; height: 200px; object-fit: cover; border-radius: 6px;" />
+  <img src="https://github.com/user-attachments/assets/735b3c92-46f7-4f2d-b62a-bd521d304bb4" alt="mobile3" style="width: 100px; height: 200px; object-fit: cover; border-radius: 6px;" />
 
 </div>
 
