@@ -15,8 +15,7 @@ Add up to 4–5 screenshots here of your app’s main features, such as:
 <img width="1280" height="1153" alt="yt11" src="https://github.com/user-attachments/assets/0391d808-27e5-4b77-adf7-e3d4ce294510" />
 <img width="1280" height="686" alt="yt7" src="https://github.com/user-attachments/assets/36bd0473-0c3f-4ac6-9e72-5ad57b2b3d64" />
 <img width="1280" height="672" alt="yt10" src="https://github.com/user-attachments/assets/4437c613-7bc5-4c68-ab55-b73613df713a" />
-<img width="218" height="412" alt="mb" src="https://github.com/user-attachments/assets/98c94f40-a71f-400d-8ade-4050b460c50e" />
-<img width="194" height="396" alt="mb2" src="https://github.com/user-attachments/assets/ad6d4a84-2564-43a1-8751-3df2ccb3362d" />
+
 
 ---
 
