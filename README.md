@@ -35,10 +35,13 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
 
 ### 📹 User Engagement
 
+* Subscribe/Unscribe functionality
 * Like/Dislike system with real-time UI updates
 * Interactive comments
+* Creator profile view
 * Watch history tracking
 * Playlist creation & management
+* AI thumbnail, description and title generation for video
 
 ### 🧑‍💼 Creator Studio
 
