@@ -58,7 +58,7 @@ const VideoReactions = ({
       >
         <ThumbsUpIcon
           className={cn(
-            "size-5 text-muted-foreground dark:text-muted dark:group-hover:text-white",
+            "size-5 text-muted-foreground dark:text-gray-200 dark:group-hover:text-white",
             viewerReaction === "like" && "fill-black dark:fill-white"
           )}
         />
@@ -73,7 +73,7 @@ const VideoReactions = ({
       >
         <ThumbsDownIcon
           className={cn(
-            "size-5 text-muted-foreground dark:text-muted dark:group-hover:text-white",
+            "size-5 text-muted-foreground dark:text-gray-200 dark:group-hover:text-white",
             viewerReaction === "dislike" && "fill-black dark:fill-white"
           )}
         />
