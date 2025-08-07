@@ -2,6 +2,7 @@
 
 uTube is a full-featured, you can say a youtube clone exactly like youtube, YouTube-like video platform built with bleeding-edge technologies. It offers everything from high-performance video playback and real-time processing to intelligent content management, powered by AI and a modular design. Honestly speaking, put less effort in UI than functionlity and logic.
 
+<img width="1024" height="1024" alt="ChatGPT Image Aug 7, 2025, 11_00_39 PM" src="https://github.com/user-attachments/assets/487c724c-f053-4701-89e1-b0a3c6648fb5" />
 
 ## 🚀 Features
 🎥 Advanced video player with quality controls<br />
@@ -23,23 +24,6 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
 🔄 tRPC for type-safe APIs<br />
 💅 TailwindCSS & ShadcnUI styling<br />
 
-
-
----
-
-## 📸 Preview
-
-<div style="display: grid; grid-template-columns: repeat(4, 120px); gap: 8px; justify-content: center;">
-
-  <img src="https://github.com/user-attachments/assets/23783120-cc2a-47ba-8ff4-b64148447fd6" alt="yt1" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
-  <img src="https://github.com/user-attachments/assets/c170aa7f-71f0-48b1-a951-1273828850d6" alt="yt8" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
-  <img src="https://github.com/user-attachments/assets/22ffd802-e430-4fb7-91dd-f8b1d2297a7d" alt="yt6" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
-  <img src="https://github.com/user-attachments/assets/0391d808-27e5-4b77-adf7-e3d4ce294510" alt="yt11" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
-
-  <img src="https://github.com/user-attachments/assets/d3e6be13-bd8d-4cb8-a9c2-c913df00ee86" alt="mobile1" style="width: 100px; height: 200px; object-fit: cover; border-radius: 6px;" />
-  <img src="https://github.com/user-attachments/assets/bf030cd8-0fad-4734-8f2d-e83134e5495c" alt="mobile2" style="width: 100px; height: 200px; object-fit: cover; border-radius: 6px;" />
-
-</div>
 
 
 ---
@@ -100,6 +84,23 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
 * Secure user auth via [Clerk.dev](https://clerk.dev/)
 * Role-based access
 * Auth-protected routes and content
+
+---
+
+## 📸 Preview
+
+<div style="display: grid; grid-template-columns: repeat(4, 120px); gap: 8px; justify-content: center;">
+
+  <img src="https://github.com/user-attachments/assets/23783120-cc2a-47ba-8ff4-b64148447fd6" alt="yt1" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
+  <img src="https://github.com/user-attachments/assets/c170aa7f-71f0-48b1-a951-1273828850d6" alt="yt8" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
+  <img src="https://github.com/user-attachments/assets/22ffd802-e430-4fb7-91dd-f8b1d2297a7d" alt="yt6" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
+  <img src="https://github.com/user-attachments/assets/0391d808-27e5-4b77-adf7-e3d4ce294510" alt="yt11" style="width: 300px; height: 300px; object-fit: cover; border-radius: 6px;" />
+
+  <img src="https://github.com/user-attachments/assets/d3e6be13-bd8d-4cb8-a9c2-c913df00ee86" alt="mobile1" style="width: 100px; height: 200px; object-fit: cover; border-radius: 6px;" />
+  <img src="https://github.com/user-attachments/assets/bf030cd8-0fad-4734-8f2d-e83134e5495c" alt="mobile2" style="width: 100px; height: 200px; object-fit: cover; border-radius: 6px;" />
+
+</div>
+
 
 ---
 
