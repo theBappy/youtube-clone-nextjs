@@ -2,7 +2,7 @@
 
 uTube is a full-featured, you can say a youtube clone exactly like youtube, YouTube-like video platform built with bleeding-edge technologies. It offers everything from high-performance video playback and real-time processing to intelligent content management, powered by AI and a modular design. Honestly speaking, put less effort in UI than functionlity and logic.
 
-<img width="1024" height="1024" alt="ChatGPT Image Aug 7, 2025, 11_00_39 PM" src="https://github.com/user-attachments/assets/487c724c-f053-4701-89e1-b0a3c6648fb5" />
+<img width="1024" height="1024" alt="Generated Image November 27, 2025 - 8_25PM (1)" src="https://github.com/user-attachments/assets/8fbefec2-10c3-4d08-beba-d34a1c6db905" />
 
 ## 🚀 Features
 🎥 Advanced video player with quality controls<br />
