@@ -6,15 +6,9 @@ uTube is a full-featured, you can say a youtube clone exactly like youtube, YouT
 
 ---
 
-## 📸 Preview
+## 📸 Demo Video
+https://github.com/user-attachments/assets/8caa07e6-cfc1-4a13-9c9f-5f30043a18d5
 
-Add up to 4–5 screenshots here of your app’s main features, such as:
-
-* Home feed with thumbnails
-* Video player in action
-* Creator studio dashboard
-* Playlist management
-* Dark/light mode toggle
 
 ## 🌐 Visit: https://ytube-jade.vercel.app
 ---
