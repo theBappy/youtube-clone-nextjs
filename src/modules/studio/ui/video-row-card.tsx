@@ -134,7 +134,7 @@ export const VideoRowCard = ({ data, size="default", onRemove }: VideoRowCardPro
                     </p>
                   </TooltipTrigger>
                   <TooltipContent
-                    size="bottom"
+                    side="bottom"
                     align="center"
                     className="bg-black/70"
                   >

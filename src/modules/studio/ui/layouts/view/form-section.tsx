@@ -417,7 +417,7 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
                     <FormLabel>Category</FormLabel>
                     <Select
                       onValueChange={field.onChange}
-                      defaultValue={field.value ?? undefined}
+                      defaultValue={typeof field.value === "string" ? field.value : undefined}
                     >
                       <FormControl>
                         <SelectTrigger>
@@ -506,7 +506,7 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
                     <FormLabel>Visibility</FormLabel>
                     <Select
                       onValueChange={field.onChange}
-                      defaultValue={field.value ?? undefined}
+                      defaultValue={typeof field.value === "string" ? field.value : undefined}
                     >
                       <FormControl>
                         <SelectTrigger>

@@ -11,11 +11,15 @@ const Page = async ({ params }: PageProps) => {
   const { videoId } = await params;
 
   void trpc.studio.getOne.prefetch({ id: videoId });
-  void trpc.studio.getMany.prefetch();
+  void trpc.search.getMany.prefetch({
+    limit: 20,
+  });
 
-  return <HydrateClient>
-    <VideoView videoId={videoId} />
-  </HydrateClient>;
+  return (
+    <HydrateClient>
+      <VideoView videoId={videoId} />
+    </HydrateClient>
+  );
 };
 
 export default Page;
