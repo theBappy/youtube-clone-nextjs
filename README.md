@@ -2,6 +2,8 @@
 
 uTube is a full-featured, you can say a youtube clone exactly like youtube, YouTube-like video platform built with bleeding-edge technologies. It offers everything from high-performance video playback and real-time processing to intelligent content management, powered by AI and a modular design.
 
+<img width="1024" height="1024" alt="Generated Image November 27, 2025 - 8_25PM (1)" src="https://github.com/user-attachments/assets/9116a70f-9941-41d8-ad10-2905b0873532" />
+
 ---
 
 ## 📸 Preview
@@ -14,6 +16,7 @@ Add up to 4–5 screenshots here of your app’s main features, such as:
 * Playlist management
 * Dark/light mode toggle
 
+## 🌐 Visit: https://ytube-jade.vercel.app
 ---
 
 ## 🚀 Features
