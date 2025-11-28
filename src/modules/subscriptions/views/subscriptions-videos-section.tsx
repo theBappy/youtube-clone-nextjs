@@ -47,7 +47,8 @@ const SubscriptionsVideosSectionSuspense = () => {
       utils.users.getOne.invalidate({ id: data.creatorId });
     },
     onError: (error) => {
-      toast.error("Something went wrong", error);
+        console.error(error);
+        toast.error("Something went wrong");
     },
   });
 
