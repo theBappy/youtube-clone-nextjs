@@ -1,7 +1,6 @@
 "use client";
 
 import { DEFAULT_LIMIT } from "@/constants";
-import { useIsMobile } from "@/hooks/use-mobile";
 import { trpc } from "@/trpc/client";
 
 import {

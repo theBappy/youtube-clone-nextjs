@@ -9,6 +9,7 @@ interface InputType {
 }
 
 const TITLE_SYSTEM_PROMPT = `Your task is to generate an SEO-focused title for a YouTube video based on its transcript. Please follow these guidelines:
+
 - Be concise but descriptive, using relevant keywords to improve discoverability.
 - Highlight the most compelling or unique aspect of the video content.
 - Avoid jargon or overly complex language unless it directly supports searchability.
